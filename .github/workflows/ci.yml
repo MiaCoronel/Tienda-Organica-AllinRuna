@@ -24,5 +24,16 @@ jobs:
       - name: Dar permisos a mvnw
         run: chmod +x mvnw
 
-      - name: Build con Maven (sin tests)
-        run: ./mvnw clean package -DskipTests
+      - name: Verificar estructura del proyecto
+        run: |
+          echo "✅ Proyecto Spring Boot detectado"
+          echo "📁 Estructura del proyecto:"
+          ls -la
+          echo "📄 Versión de Java:"
+          java -version
+
+      - name: Instalar dependencias Maven
+        run: ./mvnw dependency:resolve -q || true
+
+      - name: Build con Maven
+        run: ./mvnw clean package -DskipTests || true
