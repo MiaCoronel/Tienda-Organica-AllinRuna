@@ -41,7 +41,8 @@ public class AdminController {
         model.addAttribute("totalProductos", this.productoRepository.count());
         model.addAttribute("totalUsuarios", this.usuarioRepository.count());
         model.addAttribute("totalPedidos", this.pedidoRepository.count());
-        model.addAttribute("pedidosRecientes", this.pedidoRepository.findTop5ByOrderByFechaDesc());
+        model.addAttribute("pedidosRecientes", pedidoRepository.findAllByOrderByFechaDesc().stream().limit(5).collect(java.util.stream.Collectors.toList()));
+
         return "admin/dashboard";
     }
 
