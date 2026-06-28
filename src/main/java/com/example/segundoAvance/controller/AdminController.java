@@ -153,7 +153,7 @@ public class AdminController {
 
     @GetMapping({ "/pedidos/detalle/{id}" })
     public String verDetallePedido(@PathVariable Long id, Model model) {
-        Pedido pedido = (Pedido) this.pedidoRepository.findById(id).orElse((Object) null);
+        Pedido pedido = this.pedidoRepository.findById(id).orElse(null);
         if (pedido != null) {
             model.addAttribute("pedido", pedido);
             model.addAttribute("usuario", pedido.getUsuario());
