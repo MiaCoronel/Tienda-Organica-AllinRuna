@@ -2,10 +2,7 @@
 
 Plataforma web para la gestión y venta de productos orgánicos, desarrollada con **Java Spring Boot**.
 
-![Java](https://img.shields.io/badge/Java-21-orange)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)
-![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow)
+![Java](https://img.shields.io/badge/Java-21-orange) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen) ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue) ![Estado](https://img.shields.io/badge/Estado-En%20Desarrollo-yellow) ![CI](https://github.com/MiaCoronel/Tienda-Organica-AllinRuna/actions/workflows/ci.yml/badge.svg)
 
 ## 📖 Descripción
 
@@ -25,6 +22,7 @@ Proyecto desarrollado para el curso de **Herramientas de Desarrollo** — Univer
 ## ⚙️ Instalación y configuración
 
 ### Requisitos previos
+
 - Java 21 o superior
 - Maven
 - MySQL 8.0
@@ -32,26 +30,26 @@ Proyecto desarrollado para el curso de **Herramientas de Desarrollo** — Univer
 
 ### Pasos para instalar
 
-1. Clonar el repositorio:
+**1.** Clonar el repositorio:
 ```bash
 git clone https://github.com/MiaCoronel/Tienda-Organica-AllinRuna.git
 cd Tienda-Organica-AllinRuna
 ```
 
-2. Configurar la base de datos en `src/main/resources/application.properties`:
+**2.** Configurar la base de datos en `src/main/resources/application.properties`:
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/tienda_organica_db
 spring.datasource.username=tu_usuario
 spring.datasource.password=tu_contraseña
 ```
 
-3. Ejecutar el proyecto:
+**3.** Ejecutar el proyecto:
 ```bash
 ./mvnw spring-boot:run
 ```
 
-4. Abrir en el navegador:
-   http://localhost:8080
+**4.** Abrir en el navegador:
+http://localhost:8080
 
 ## 📂 Estructura del proyecto
 src/main/java/com/example/segundoAvance/
@@ -64,13 +62,26 @@ src/main/java/com/example/segundoAvance/
 
 ## 🌐 Despliegue
 
-- **Backend:** Desplegado en [Railway](https://railway.app)
-- **Base de datos:** MySQL en Railway
-- **CI/CD:** Automatizado con GitHub Actions
+| Servicio | Plataforma | Estado |
+|----------|------------|--------|
+| Backend | Railway | ✅ Activo |
+| Base de datos | MySQL (Railway) | ✅ Activo |
+| CI/CD | GitHub Actions | ✅ Configurado |
+
+## 🔄 CI/CD
+
+Este proyecto cuenta con un pipeline automatizado:
+
+- **Integración Continua:** cada push o PR ejecuta un build automático con Maven mediante GitHub Actions (`.github/workflows/ci.yml`)
+- **Entrega Continua:** cada merge a `main` despliega automáticamente el backend en Railway
 
 ## 📸 Capturas de pantalla
 
 *(Próximamente)*
+
+## 🐛 Seguimiento de incidentes
+
+El proyecto utiliza **GitHub Issues** para el reporte y seguimiento de bugs, mejoras y nuevas funcionalidades. Consulta la pestaña [Issues](https://github.com/MiaCoronel/Tienda-Organica-AllinRuna/issues) del repositorio.
 
 ## 👥 Equipo de desarrollo
 
@@ -78,10 +89,10 @@ src/main/java/com/example/segundoAvance/
 |------------|-----|
 | Mia Coronel | Desarrolladora Backend |
 | Marlon Condori | Desarrollador Backend |
-| Johann Chamorro | Desarrollador FRONT- |
-| Aldo Jhonatan | Desarrollador FRONT-|
-
+| Johann Chamorro | Desarrollador |
+| Aldo Jhonatan | Desarrollador |
+| Martín | Desarrollador |
 
 ## 📝 Licencia
 
-Proyecto académico desarrollado con fines educativos para la UTP.
+Proyecto académico desarrollado con fines educativos para la UTP.tivos para la UTP.
