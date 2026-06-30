@@ -89,9 +89,9 @@ El proyecto utiliza **GitHub Issues** para el reporte y seguimiento de bugs, mej
 |------------|-----|
 | Mia Coronel | Desarrolladora Backend |
 | Marlon Condori | Desarrollador Backend |
-| Johann Chamorro | Desarrollador |
-| Aldo Jhonatan | Desarrollador |
-| Martín | Desarrollador |
+| Johann Chamorro | Desarrollador FRONT- |
+| Aldo Jhonatan | Desarrollador FRONT- |
+
 
 ## 📝 Licencia
 
